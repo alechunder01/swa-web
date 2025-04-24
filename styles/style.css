@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, p, a {
+    color: var(--fontdark1);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+:root {
+    /*Dark mode colors*/
+    --dark1: rgb(24, 24, 24);
+    --dark2: rgb(38, 38, 38);
+    --dark3: rgb(46, 46, 46);
+    --fontdark1: rgb(255, 255, 255);
+}
+
+::selection {
+    background-color: rgb(87, 87, 87);
+}
+
+/*Page layout*/
+
+.main-page {
+    display: grid;
+    grid-template-rows: 15vh 45vh 40vh 15vh;
+}
+
+/*Header*/
+
+header {
+    background-color: var(--dark1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.headerleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerleft p {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.headerlogo {
+    width: 15vw;
+}
+
+.headerright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.headerright a {
+    font-size: 2vw;
+    transition: 150ms;
+    border-bottom: solid 3px white;
+}
+.headerright a:hover {
+    padding-bottom: 5px;
+    transition: 150ms;
+}
+
+/*Section 1*/
+
+.section1 {
+    background-color: var(--dark3);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.sect1left p {
+    font-size: 1.5vw;
+    width: 80%;
+}
+.sect1left h1 {
+    font-size: 3vw;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.sect1right img {
+    width: 40vw;
+}
+
+/*Section 2*/
+
+.section2 {
+    background-color: var(--dark2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section2 a {
+    background-color: var(--dark1);
+    font-size: 30px;
+
+    width: 25vw;
+    height: calc((25vw / 3) * 2);
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+
+    cursor: pointer;
+    transition: 150ms;
+}
+.section2 a:hover {
+    margin-bottom: 20px;
+    box-shadow: var(--dark1) 0 10px 20px;
+    transition: 150ms;
+}
+
+.sect2icon {
+    width: 8vw;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: var(--dark1);
+}
